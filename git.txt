@@ -1,0 +1,229 @@
+Nazyh@DESKTOP-OKQN21P MINGW64 ~
+$ cd D:\XpertCourse
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse
+$ ls
+git.html  git.txt
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse
+$ nano git.html
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse
+$ git init
+Initialized empty Git repository in D:/XpertCourse/.git/
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git.html
+        git.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git add .
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   git.html
+        new file:   git.txt
+
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git commit -m "my first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Nazyh@DESKTOP-OKQN21P.(none)')
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git config --global user.email"nazyhfakherdine@gmail.com"
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git config --global user.name"nazyh"
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git commit -m "my first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Nazyh@DESKTOP-OKQN21P.(none)')
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git config --global user.name "nazyh"
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git config --global user.email "nazyhfakherdine@gmail.com"
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git commit -m "my first commit"
+[master (root-commit) 81cb6e2] my first commit
+ 2 files changed, 1 insertion(+)
+ create mode 100644 git.html
+ create mode 100644 git.txt
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ code .
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ code .
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git diff git.html
+diff --git a/git.html b/git.html
+index bdfd693..d4e9547 100644
+--- a/git.html
++++ b/git.html
+@@ -1 +1,2 @@
+-hellooo
+\ No newline at end of file
++hellooo
++<p>hi</p>
+\ No newline at end of file
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git diff git.html
+diff --git a/git.html b/git.html
+index bdfd693..e63c75c 100644
+--- a/git.html
++++ b/git.html
+@@ -1 +1,3 @@
+-hellooo
+\ No newline at end of file
++hellooo
++<p>hi</p>
++<h2>ehm</h2>
+\ No newline at end of file
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git restore git.html
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git diff git.html
+diff --git a/git.html b/git.html
+index bdfd693..e63c75c 100644
+--- a/git.html
++++ b/git.html
+@@ -1 +1,3 @@
+-hellooo
+\ No newline at end of file
++hellooo
++<p>hi</p>
++<h2>ehm</h2>
+\ No newline at end of file
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git add .
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git diff git.html
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git commit -m "marra tenye commit"
+[master 67019ba] marra tenye commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git diff git.html
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git remote add origin https://github.com/nazyhfakherdine/XpertbootCourse.git
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/nazyhfakherdine/XpertbootCourse.git'
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 524 bytes | 524.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/nazyhfakherdine/XpertbootCourse.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Nazyh@DESKTOP-OKQN21P MINGW64 /d/XpertCourse (master)
+$
